@@ -6,10 +6,10 @@ const Project = ({ title, summary, techStacks, githubLink, reverse }) => {
   console.log(title);
   return (
     <div>
-      <div className="flex flex-row w-[80vw] mb-2 bg-base">
+      <div className="flex flex-row items-center w-[80vw] mb-2 bg-base prose ">
         {reverse ?? <div className="bg-slate-600 w-80 h-40 mr-10" />}
         <div className="flex flex-col">
-          <p className="mb-1 ">p? {title} </p>
+          <h3 className="mb-1 ">p? {title} </h3>
           <p className="mb-1">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             pariatur ipsa maiores quod similique unde asperiores ut tempora
