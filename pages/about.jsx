@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "src/components/Nav";
+import Nav from "../src/components/Nav";
 const About = () => {
   return (
     <div>
