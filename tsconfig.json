@@ -16,16 +16,9 @@
     "jsx": "preserve",
     "baseUrl": "./src",
     "paths": {
-      "*": ["../*"]
+      "*": ["./*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src/components/Project.jsx",
-    "src/components/Nav.jsx",
-    "src/components/Counter.jsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.jsx"],
   "exclude": ["node_modules"]
 }
