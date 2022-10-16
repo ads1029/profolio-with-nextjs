@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { atom, useAtom } from "jotai";
 import { atomWithStorage } from "jotai/utils";
-import NonSSRWrapper from "../components/NonSSRWrapper";
+import NonSSRWrapper from "./NonSSRWrapper";
 
 export const countAtom = atom(0);
 
