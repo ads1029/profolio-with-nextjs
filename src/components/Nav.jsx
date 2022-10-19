@@ -3,11 +3,11 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-primary">
+    <div className="navbar bg-primary mb-2 sticky top-0">
       <div className="flex-1 hidden sm:block">
         <Link href="/">
           <button className="btn btn-ghost no-animation normal-case text-4xl font-light text-base-100">
-            Minjie Huang
+            Minjie Huang (WIP)
           </button>
         </Link>
       </div>
