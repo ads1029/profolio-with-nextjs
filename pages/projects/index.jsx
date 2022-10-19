@@ -8,37 +8,44 @@ const Projects = () => {
       title: "testing",
       summary: "testing summary",
       techStacks: ["a", "vv", "ccc"],
-      githubLink: "https://github.com/",
+      projectImage: "/../public/projectImages/Sakamoto.webp",
+      display: "https://ads1029.github.io/",
     },
     {
       title: "GYG",
       summary: "GYG summary",
       techStacks: ["a", "vv", "ccc"],
-      githubLink: "https://github.com/",
+      projectImage: "/../public/projectImages/GYG-App-1.jpg",
+      display: "https://ads1029.github.io/",
     },
     {
-      title: "Several Shopify Projects",
+      title: "Billini",
       summary: "testing summary",
       techStacks: ["a", "vv", "ccc"],
-      githubLink: "https://github.com/",
+      projectImage: "/../public/projectImages/portfolio-shopify-billini.png",
+      display: "https://www.billini.com/",
     },
     {
       title: "UTMS",
       summary: "testing summary",
       techStacks: ["a", "vv", "ccc"],
-      githubLink: "https://github.com/",
+      projectImage: "/../public/projectImages/portfolio-UTMS.png",
+      display: "https://ads1029.github.io/",
     },
     {
       title: "UPhoto",
       summary: "testing summary",
       techStacks: ["a", "vv", "ccc"],
-      githubLink: "https://github.com/",
+      projectImage: "/../public/projectImages/portfolio-Uphoto.png",
+      display: "https://ads1029.github.io/",
     },
     {
       title: "Pure Portfolio",
       summary: "testing summary",
       techStacks: ["HTML", "CSS"],
+      projectImage: "/../public/projectImages/portfolio-pure-portfolio.png",
       githubLink: "https://ads1029.github.io/",
+      display: "https://ads1029.github.io/",
     },
   ];
   return (
@@ -53,6 +60,8 @@ const Projects = () => {
               summary={project.summary}
               techStacks={project.techStacks}
               githubLink={project.githubLink}
+              display={project.display}
+              projectImage={project.projectImage}
               reverse={!!(index % 2)}
             />
           );

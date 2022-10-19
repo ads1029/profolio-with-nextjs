@@ -7,10 +7,21 @@ const Project = ({
   summary,
   techStacks,
   githubLink,
+  display,
   projectImage,
   reverse,
 }) => {
-  const projectImageDiv = (
+  const projectImageDiv = !!projectImage ? (
+    <div className="w-80 h-80 flex-1 relative">
+      <Image
+        src={projectImage}
+        alt="project Image"
+        layout="fill"
+        objectFit="cover"
+      />
+      {/* <div className="bg-gradient-to-br from-accent w-80 h-80 flex-1" /> */}
+    </div>
+  ) : (
     <div className="bg-gradient-to-br from-primary w-80 h-80 flex-1" />
   );
 
@@ -18,7 +29,8 @@ const Project = ({
   // console.log(techStacks.map((techStack) => console.log(techStack)));
 
   return (
-    <div className="flex flex-row items-center mb-10 bg-base prose shadow-lg rounded-lg lg:prose-xl">
+    // <div className="flex flex-row items-center mb-10 bg-base prose shadow-lg rounded-lg lg:prose-xl">
+    <div className="flex flex-row mb-10 bg-base prose shadow-lg rounded-lg lg:prose-xl">
       {reverse || projectImageDiv}
       <div className="flex flex-col flex-1 mx-2">
         <h3>{title}</h3>
@@ -30,9 +42,18 @@ const Project = ({
           maiores tenetur.
         </p>
 
-        <a href={githubLink} className="mb-2">
-          repo
-        </a>
+        <div className="flex justify-between mr-4">
+          {!!display && (
+            <a href={display} className="mb-2">
+              display
+            </a>
+          )}
+          {!!githubLink && (
+            <a href={githubLink} className="mb-2">
+              repo
+            </a>
+          )}
+        </div>
 
         <div className="flex mb-4">
           {techStacks.map((techStack) => {
