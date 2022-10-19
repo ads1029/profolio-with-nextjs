@@ -34,19 +34,18 @@ const Dog = (props) => {
   return (
     <>
       <Navbar />
-      <div>Dog</div>
-      <Counter></Counter>
+      <div>Dog API</div>
       <p>SSR render title: {props.title}</p>
       <button
         className="btn btn-accent"
         onClick={() => {
-          setRandomInt(Math.round(Math.random() * 10));
+          setRandomInt(Math.round(Math.random() * 10) + 1);
         }}
       >
         click to get a random title (throw error when ran = 2)
       </button>
       {!data && !error && <p> SWR is fetching data...</p>}
-      {error && <p> oops! We found error: {error.status} </p>}
+      {error && <p>oops! We found error: {error.status}</p>}
       {data && <p> SWR gets you: {data.title} </p>}
     </>
   );

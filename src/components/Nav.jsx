@@ -24,8 +24,8 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/contact">
-              <a className="text-base-100">Contact</a>
+            <Link href="/counter">
+              <a className="text-base-100">Counter</a>
             </Link>
           </li>
           <li>

@@ -1,13 +1,14 @@
 import React from "react";
 import Nav from "../src/components/Nav";
+import Counter from "../src/components/Counter";
 
-const Contact = () => {
+const CounterPage = () => {
   return (
     <div>
       <Nav />
-      Contact
+      <Counter />
     </div>
   );
 };
 
-export default Contact;
+export default CounterPage;
