@@ -19,7 +19,7 @@ const Projects = () => {
             <Project
               key={`${project}-{index}`}
               title={project}
-              reverse={index % 2}
+              reverse={!!(index % 2)}
             />
           );
         })}
