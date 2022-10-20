@@ -14,12 +14,14 @@ const Project = ({
   const projectImageDiv = !!projectImage ? (
     <div className="w-80 h-80 flex-1 relative">
       <Image
+        className="rounded-lg"
         src={projectImage}
         alt="project Image"
         layout="fill"
         objectFit="cover"
+        placeholder="blur"
+        quality={10} // ? TBC
       />
-      {/* <div className="bg-gradient-to-br from-accent w-80 h-80 flex-1" /> */}
     </div>
   ) : (
     <div className="bg-gradient-to-br from-primary w-80 h-80 flex-1" />
@@ -30,7 +32,7 @@ const Project = ({
 
   return (
     // <div className="flex flex-row items-center mb-10 bg-base prose shadow-lg rounded-lg lg:prose-xl">
-    <div className="flex flex-row mb-10 bg-base prose shadow-lg rounded-lg lg:prose-xl">
+    <div className="flex flex-row mb-10 place-items-center prose shadow-lg rounded-lg lg:prose-xl">
       {reverse || projectImageDiv}
       <div className="flex flex-col flex-1 mx-2">
         <h3>{title}</h3>
