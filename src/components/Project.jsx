@@ -33,7 +33,7 @@ const Project = ({
   return (
     // <div className="flex flex-row items-center mb-10 bg-base prose shadow-lg rounded-lg lg:prose-xl">
     <>
-      <div className="card max-w-md lg:max-w-3xl  lg:card-side  bg-base-100 shadow-xl mb-12">
+      <div className="card max-w-md lg:max-w-4xl  lg:card-side  bg-base-100 shadow-xl mb-12">
         <figure>{projectImageDiv}</figure>
         <div className="card-body prose">
           <h2 className="card-title">{title}</h2>
@@ -42,7 +42,7 @@ const Project = ({
             Autem, possimus? Tempore sequi exercitationem ullam dicta
             voluptatibus sed excepturi ipsum quis.
           </p>
-          <div className="flex mb-4">
+          <div className="flex mb-4 justify-center lg:justify-end">
             {techStacks.map((techStack) => {
               return (
                 <>
@@ -53,7 +53,13 @@ const Project = ({
             })}
           </div>
           <div className="card-actions justify-center lg:justify-end">
-            <button className="btn btn-accent">Display</button>
+            <a href={display}>
+              {!display ? (
+                <button className={"btn btn-disabled"}>Display</button>
+              ) : (
+                <button className={"btn btn-accent"}>Display</button>
+              )}
+            </a>
             {!!githubLink && (
               <a href={githubLink}>
                 <button className="btn btn-accent">Repo</button>

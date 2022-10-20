@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../../src/components/Nav";
 import Project from "../../src/components/Project";
 import SakamotoImage from "../../public/projectImages/Sakamoto.webp";
-import GYGImage from "../../public/projectImages/GYG-App-1.jpg";
+import GYGAppImage from "../../public/projectImages/GYG-App-1.jpg";
+import GYGWebImage from "../../public/projectImages/GYG-Web-1.png";
 import BilliniImage from "../../public/projectImages/portfolio-shopify-billini.png";
 import UTMSImage from "../../public/projectImages/portfolio-UTMS.png";
 import UPhotoImage from "../../public/projectImages/portfolio-Uphoto.png";
@@ -15,14 +16,21 @@ const Projects = () => {
       summary: "testing summary",
       techStacks: ["a", "vv", "ccc"],
       projectImage: SakamotoImage,
-      display: "https://ads1029.github.io/",
+      display: "",
     },
     {
-      title: "GYG",
+      title: "GYG - ordering App",
       summary: "GYG summary",
       techStacks: ["a", "vv", "ccc"],
-      projectImage: GYGImage,
-      display: "https://ads1029.github.io/",
+      projectImage: GYGAppImage,
+      display: "",
+    },
+    {
+      title: "GYG - ordering Web",
+      summary: "GYG summary",
+      techStacks: ["a", "vv", "ccc"],
+      projectImage: GYGWebImage,
+      display: "https://order.guzmanygomez.com.au/",
     },
     {
       title: "Billini",
@@ -36,22 +44,22 @@ const Projects = () => {
       summary: "testing summary",
       techStacks: ["a", "vv", "ccc"],
       projectImage: UTMSImage,
-      display: "https://ads1029.github.io/",
+      display: "http://utms.com/cn",
     },
     {
       title: "UPhoto",
       summary: "testing summary",
       techStacks: ["a", "vv", "ccc"],
       projectImage: UPhotoImage,
-      display: "https://ads1029.github.io/",
+      display: "",
     },
     {
       title: "Pure Portfolio",
       summary: "testing summary",
       techStacks: ["HTML", "CSS"],
       projectImage: purePortfolioImage,
-      githubLink: "https://ads1029.github.io/",
-      display: "https://ads1029.github.io/",
+      githubLink: "https://github.com/ads1029",
+      display: "https://github.com/ads1029/ads1029.github.io",
     },
   ];
   return (
