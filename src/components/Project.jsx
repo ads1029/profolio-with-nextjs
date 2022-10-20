@@ -12,7 +12,7 @@ const Project = ({
   reverse,
 }) => {
   const projectImageDiv = !!projectImage ? (
-    <div className="w-80 h-80 flex-1 relative">
+    <div className="w-[400px] h-[400px] flex-1 relative">
       <Image
         className="rounded-lg"
         src={projectImage}
@@ -32,44 +32,37 @@ const Project = ({
 
   return (
     // <div className="flex flex-row items-center mb-10 bg-base prose shadow-lg rounded-lg lg:prose-xl">
-    <div className="flex flex-row mb-10 place-items-center prose shadow-lg rounded-lg lg:prose-xl">
-      {reverse || projectImageDiv}
-      <div className="flex flex-col flex-1 mx-2">
-        <h3>{title}</h3>
-        <p>
-          {summary}
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos illo
-          itaque assumenda id saepe ducimus doloribus inventore repellendus,
-          maiores tenetur.
-        </p>
-
-        <div className="flex justify-between mr-4">
-          {!!display && (
-            <a href={display} className="mb-2">
-              display
-            </a>
-          )}
-          {!!githubLink && (
-            <a href={githubLink} className="mb-2">
-              repo
-            </a>
-          )}
-        </div>
-
-        <div className="flex mb-4">
-          {techStacks.map((techStack) => {
-            return (
-              <>
-                <Image src={Tick} alt="tick" className="fill-slate-100" />
-                <div className="mx-4 ">{techStack}</div>
-              </>
-            );
-          })}
+    <>
+      <div className="card max-w-md lg:max-w-3xl  lg:card-side  bg-base-100 shadow-xl mb-12">
+        <figure>{projectImageDiv}</figure>
+        <div className="card-body prose">
+          <h2 className="card-title">{title}</h2>
+          <p>
+            {summary} Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Autem, possimus? Tempore sequi exercitationem ullam dicta
+            voluptatibus sed excepturi ipsum quis.
+          </p>
+          <div className="flex mb-4">
+            {techStacks.map((techStack) => {
+              return (
+                <>
+                  <Image src={Tick} alt="tick" className="fill-slate-100" />
+                  <div className="mx-4 ">{techStack}</div>
+                </>
+              );
+            })}
+          </div>
+          <div className="card-actions justify-center lg:justify-end">
+            <button className="btn btn-accent">Display</button>
+            {!!githubLink && (
+              <a href={githubLink}>
+                <button className="btn btn-accent">Repo</button>
+              </a>
+            )}
+          </div>
         </div>
       </div>
-      {reverse && projectImageDiv}
-    </div>
+    </>
   );
 };
 
