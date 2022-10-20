@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -43,6 +44,25 @@ const Navbar = () => {
                 About
               </button>
             </Link>
+          </li>
+
+          <li>
+            {/* <div className="bg-red-400"> */}
+            {/* <div> */}
+            <AiFillGithub
+              size="3.5rem"
+              color="white"
+              className="hover:bg-gray-400 duration-500"
+            />
+            {/* </div> */}
+          </li>
+
+          <li>
+            <AiFillLinkedin
+              size="3.5rem"
+              color="white"
+              className="hover:bg-gray-400 duration-500"
+            />
           </li>
         </ul>
       </div>
