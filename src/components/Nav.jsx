@@ -22,26 +22,29 @@ const Navbar = () => {
             </Link>
           </li>
 
+          {/* removable */}
           <li>
             <Link href="/counter">
               <a className="text-base-300 hover:text-base-100 duration-500">
-                Counter
+                (Counter)
               </a>
             </Link>
           </li>
 
+          {/* removable */}
           <li>
             <Link href="/dog">
               <a className="text-base-300 hover:text-base-100 duration-500">
-                Dog API
+                (Dog API)
               </a>
             </Link>
           </li>
 
+          {/* removable */}
           <li>
             <Link href="/about">
               <button className="text-base-300 hover:text-base-100 duration-500">
-                About
+                (About)
               </button>
             </Link>
           </li>
