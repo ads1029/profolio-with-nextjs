@@ -5,7 +5,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
 const Navbar = () => {
   return (
     <div className="navbar bg-primary mb-2 sticky top-0 z-50">
-      <div className="flex-1 hidden sm:block">
+      <div className="flex-1">
         <Link href="/">
           <button className="btn btn-ghost no-animation normal-case text-4xl font-medium text-base-100">
             {`< MiL >`} (WIP)
@@ -52,20 +52,22 @@ const Navbar = () => {
           <li>
             {/* <div className="bg-red-400"> */}
             {/* <div> */}
-            <AiFillGithub
-              size="3.5rem"
-              color="white"
+            <a
+              href="https://github.com/ads1029"
               className="hover:bg-gray-400 duration-500"
-            />
+            >
+              <AiFillGithub size="2rem" color="white" />
+            </a>
             {/* </div> */}
           </li>
 
           <li>
-            <AiFillLinkedin
-              size="3.5rem"
-              color="white"
+            <a
+              href="https://linkedin.com/in/minjie-huang"
               className="hover:bg-gray-400 duration-500"
-            />
+            >
+              <AiFillLinkedin size="2rem" color="white" />
+            </a>
           </li>
         </ul>
       </div>

@@ -13,6 +13,7 @@ const About = () => {
         <h2>h2</h2>
         <h3>h3</h3>
       </div>
+      <h2>maybe move github and linkedin to here?</h2>
     </div>
   );
 };

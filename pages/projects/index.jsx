@@ -12,50 +12,58 @@ import purePortfolioImage from "../../public/projectImages/portfolio-pure-portfo
 const Projects = () => {
   const projectList = [
     {
-      title: "testing",
-      summary: "testing summary",
-      techStacks: ["a", "vv", "ccc"],
+      title: "Sakamoto Sang",
+      summary:
+        "A cat that speaks in human. Coming from the one of the best Anime Series Nichijo. Awesome!",
+      techStacks: ["a", "powerful", "cat"],
       projectImage: SakamotoImage,
       display: "",
     },
     {
-      title: "GYG - ordering App",
-      summary: "GYG summary",
-      techStacks: ["a", "vv", "ccc"],
+      title: "GYG - ordering App - 2022",
+      summary:
+        "An ordring App that helps Guzman Y Gomez refine the ordering experience into a next level",
+      techStacks: ["ReactNative", "Redux", "Typescript"],
       projectImage: GYGAppImage,
-      display: "",
+      display:
+        "https://apps.apple.com/au/app/guzman-y-gomez-gyg-mexican/id595292048",
     },
     {
-      title: "GYG - ordering Web",
-      summary: "GYG summary",
-      techStacks: ["a", "vv", "ccc"],
+      title: "GYG - ordering Web - 2022",
+      summary:
+        "An ordring Web App that helps Guzman Y Gomez refine the ordering experience into a next level",
+      techStacks: ["React", "Redux", "Sass", "Typescript"],
       projectImage: GYGWebImage,
       display: "https://order.guzmanygomez.com.au/",
     },
     {
-      title: "Billini",
-      summary: "testing summary",
-      techStacks: ["a", "vv", "ccc"],
+      title: "Billini - 2021",
+      summary:
+        "A shopify shopping website which helps the customer feel a touch of refreshing",
+      techStacks: ["Liquid", "Vue", "Sass"],
       projectImage: BilliniImage,
       display: "https://www.billini.com/",
     },
     {
-      title: "UTMS",
-      summary: "testing summary",
-      techStacks: ["a", "vv", "ccc"],
+      title: "UTMS - 2020",
+      summary:
+        "A supply chain B2B system using blockchain technology to help the clients monitor the status of their orders",
+      techStacks: ["React", "Redux", "ElementUI"],
       projectImage: UTMSImage,
       display: "http://utms.com/cn",
     },
     {
-      title: "UPhoto",
-      summary: "testing summary",
-      techStacks: ["a", "vv", "ccc"],
+      title: "UPhoto - 2020",
+      summary:
+        "A camera App using blockchain technology to help the users capture their photos, files, and other information immutably",
+      techStacks: ["ReactNative", "Redux"],
       projectImage: UPhotoImage,
       display: "",
     },
     {
-      title: "Pure Portfolio",
-      summary: "testing summary",
+      title: "Pure Portfolio - 2020",
+      summary:
+        "A pure portfolio building with pure HTML and CSS, mainly showing the potential of CSS",
       techStacks: ["HTML", "CSS"],
       projectImage: purePortfolioImage,
       githubLink: "https://github.com/ads1029",

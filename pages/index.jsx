@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <h1>Hello world</h1>
+      <h1 className="text-2xl"> {`<three.js model spinning>`} </h1>
       <div className="flex flex-col">
         <Counter />
         <div>
