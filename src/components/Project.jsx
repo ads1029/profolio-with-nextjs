@@ -36,7 +36,7 @@ const Project = ({
     <>
       <div className="card max-w-md lg:max-w-4xl lg:card-side  bg-base-100 shadow-xl mb-12">
         <figure>{projectImageDiv}</figure>
-        <div className="card-body prose">
+        <div className="card-body prose place-items-center lg:place-items-start ">
           <h1 className="card-title">{title}</h1>
           <h4>{summary}</h4>
           <p></p>

@@ -23,31 +23,31 @@ const Navbar = () => {
           </li>
 
           {/* removable */}
-          <li>
+          {/* <li>
             <Link href="/counter">
               <a className="text-base-300 hover:text-base-100 duration-500">
                 (Counter)
               </a>
             </Link>
-          </li>
+          </li> */}
 
           {/* removable */}
-          <li>
+          {/* <li>
             <Link href="/dog">
               <a className="text-base-300 hover:text-base-100 duration-500">
                 (Dog API)
               </a>
             </Link>
-          </li>
+          </li> */}
 
           {/* removable */}
-          <li>
+          {/* <li>
             <Link href="/about">
               <button className="text-base-300 hover:text-base-100 duration-500">
                 (About)
               </button>
             </Link>
-          </li>
+          </li> */}
 
           <li>
             {/* <div className="bg-red-400"> */}

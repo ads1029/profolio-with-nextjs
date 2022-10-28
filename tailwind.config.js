@@ -9,6 +9,7 @@ module.exports = {
     fontFamily: {
       sans: ["Graphik", "sans-serif"],
       serif: ["Merriweather", "serif"],
+      bio: ["ui-monospace", "SFMono-Regular"],
     },
   },
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
