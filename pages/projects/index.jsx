@@ -88,6 +88,7 @@ const Projects = () => {
             />
           );
         })}
+        <div>running cat image east egg</div>
       </div>
     </>
   );
