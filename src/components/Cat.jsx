@@ -76,33 +76,31 @@ const Cat = () => {
 
   return (
     <>
-      <div className="hover:scale-125 duration-500">
-        <Canvas camera={{ position: [0, 10, -26], fov: 60 }}>
-          {/* <MyRotatingBox /> */}
-          <MyRotateCat />
+      <Canvas camera={{ position: [0, 10, -26], fov: 60 }}>
+        {/* <MyRotatingBox /> */}
+        <MyRotateCat />
 
-          {/* 3 types of lighting */}
-          <ambientLight intensity={0.7} />
-          <directionalLight
-            castShadow
-            position={[0, 10, 0]}
-            intensity={1.2}
-            shadow-mapSize-Width={1024}
-            shadow-mapSize-Height={1024}
-            shadow-camera-far={50}
-            shadow-camera-left={-10}
-          />
-          <pointLight position={[-10, 0, 0]} intensity={0.2} />
+        {/* 3 types of lighting */}
+        <ambientLight intensity={0.7} />
+        <directionalLight
+          castShadow
+          position={[0, 10, 0]}
+          intensity={1.2}
+          shadow-mapSize-Width={1024}
+          shadow-mapSize-Height={1024}
+          shadow-camera-far={50}
+          shadow-camera-left={-10}
+        />
+        <pointLight position={[-10, 0, 0]} intensity={0.2} />
 
-          {/* groups */}
-          <group>
-            <mesh>
-              <planeBufferGeometry attach="geometry" args={[100, 100]} />
-              <shadowMaterial attach="material" />
-            </mesh>
-          </group>
-        </Canvas>
-      </div>
+        {/* groups */}
+        <group>
+          <mesh>
+            <planeBufferGeometry attach="geometry" args={[100, 100]} />
+            <shadowMaterial attach="material" />
+          </mesh>
+        </group>
+      </Canvas>
     </>
   );
 };
