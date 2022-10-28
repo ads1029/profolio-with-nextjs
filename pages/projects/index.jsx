@@ -157,6 +157,7 @@ const Projects = () => {
         </div>
 
         <div
+          className="cursor-pointer"
           onClick={() => {
             setShowEgg(!showEgg);
             handleScroll();
