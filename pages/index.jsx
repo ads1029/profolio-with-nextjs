@@ -5,8 +5,7 @@ import Cat from "../src/components/Cat";
 import { useAtom } from "jotai";
 
 const Home = () => {
-  const changableTailwindClass =
-    "intro prose-xl flex flex-col place-items-center";
+  const changableTailwindClass = "intro flex flex-col place-items-center";
 
   return (
     <div>
@@ -16,20 +15,37 @@ const Home = () => {
         <div className=" h-[25vw] min-h-[100px]">
           <Cat />
         </div>
+
+        <a href="https://nichijou.fandom.com/wiki/Sakamoto">
+          <div
+            className="hover:underline mb-10 text-xl text-gray-400 text-center tooltip tooltip-warning"
+            data-tip="It is a cat!"
+          >
+            ☝️ <br /> what is this thing?
+          </div>
+        </a>
         {/* </a> */}
       </div>
 
+      {/* should not be using prose. Need customise spacing */}
       <div className={changableTailwindClass}>
-        <h1 className="text-center">
-          Hi, my name is 黄旻杰 <br />
-          (Minjie Huang)
+        <h1 className="font-light text-5xl">
+          Hi, my name is{" "}
+          <p
+            className="inline-block 
+          hover:bg-yellow-200 duration-1000"
+          >
+            {/* half text tall bg hover effect */}
+            {/* hover:bg-gradient-to-b hover:from-white hover:via-white hover:to-yellow-300 "> */}
+            黄旻杰
+          </p>
+          <br />
+          aka. Minjie Huang
         </h1>
-        <div className="tooltip h-[25vw] min-h-[100px]" data-tip="hello">
-          hallo
-        </div>
-        <h2>title h2</h2>
-        <h3>title h3</h3>
-        <p>pppppppp</p>
+
+        <h2 className=" mt-10 text-3xl font-light">
+          I am a frontend developer <br /> who creates with passion.
+        </h2>
       </div>
     </div>
   );

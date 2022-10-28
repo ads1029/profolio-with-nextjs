@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Navbar from "../../src/components/Nav";
 import Project from "../../src/components/Project";
 import SakamotoImage from "../../public/projectImages/Sakamoto.webp";
@@ -8,17 +8,12 @@ import BilliniImage from "../../public/projectImages/portfolio-shopify-billini.p
 import UTMSImage from "../../public/projectImages/portfolio-UTMS.png";
 import UPhotoImage from "../../public/projectImages/portfolio-Uphoto.png";
 import purePortfolioImage from "../../public/projectImages/portfolio-pure-portfolio.png";
+import catGIF from "../../public/runningCat.gif";
+import Image from "next/image";
+import Tick from "../../public/check_circle_icon.svg";
 
 const Projects = () => {
   const projectList = [
-    {
-      title: "Sakamoto Sang",
-      summary:
-        "A cat that speaks in human. Coming from the one of the best Anime Series Nichijo. Awesome!",
-      techStacks: ["a", "powerful", "cat"],
-      projectImage: SakamotoImage,
-      display: "",
-    },
     {
       title: "GYG - ordering App - 2022",
       summary:
@@ -70,6 +65,28 @@ const Projects = () => {
       display: "https://github.com/ads1029/ads1029.github.io",
     },
   ];
+
+  const sakamoto = {
+    title: "Sakamoto",
+    summary:
+      "A cat that speaks in human. Coming from the one of the best Anime Series Nichijo. Awesome!",
+    techStacks: ["a", "powerful", "cat"],
+    projectImage: SakamotoImage,
+    display: "",
+  };
+
+  const [showEgg, setShowEgg] = useState(false);
+
+  let sakamotoClass = `card max-w-md lg:max-w-4xl lg:card-side  bg-base-100 shadow-xl mb-12 ${
+    showEgg ? "" : "hidden"
+  }`;
+
+  const handleScroll = () => {
+    divRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const divRef = useRef();
+
   return (
     <>
       <Navbar />
@@ -88,7 +105,66 @@ const Projects = () => {
             />
           );
         })}
-        <div>running cat image east egg</div>
+
+        {/* Sakamoto eastern egg */}
+
+        <div className={sakamotoClass}>
+          <figure>
+            <div
+              className="w-[400px] h-[400px] flex-1 relative 
+                  duration-500 hover:scale-105"
+            >
+              <Image
+                className="rounded-lg"
+                src={sakamoto.projectImage}
+                alt="project Image"
+                layout="fill"
+                objectFit="cover"
+                placeholder="blur"
+                quality={40} // ? TBC
+              />
+            </div>
+          </figure>
+          <div className="card-body prose place-items-center lg:place-items-start ">
+            <h1 className="card-title">{sakamoto.title}</h1>
+            <h4>{sakamoto.summary}</h4>
+            <p></p>
+            <div className="flex mb-4 justify-center lg:justify-start">
+              {sakamoto.techStacks.map((techStack, key) => {
+                return (
+                  <div className="flex" key={key}>
+                    <Image src={Tick} alt="tick" />
+                    <div className="mx-4">{techStack}</div>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="card-actions justify-center lg:justify-start">
+              {sakamoto.display ? (
+                <a href={display}>
+                  <button className={"btn btn-primary"}>Display</button>
+                </a>
+              ) : (
+                <button className={"btn btn-disabled"}>Display</button>
+              )}
+              {!!sakamoto.githubLink && (
+                <a href={sakamoto.githubLink}>
+                  <button className="btn btn-primary">Repo</button>
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <div
+          onClick={() => {
+            setShowEgg(!showEgg);
+            handleScroll();
+          }}
+          ref={divRef}
+        >
+          <Image src={catGIF} alt="cat gif" width={50} height={50} />
+        </div>
       </div>
     </>
   );
