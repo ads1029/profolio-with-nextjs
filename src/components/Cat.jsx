@@ -93,6 +93,7 @@ const Cat = () => {
         />
         <pointLight position={[-10, 0, 0]} intensity={0.2} />
 
+        <OrbitControls />
         {/* groups */}
         <group>
           <mesh>

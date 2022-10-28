@@ -12,11 +12,11 @@ const Home = () => {
     <div>
       <Navbar />
       <div className="flex flex-col place-items-center">
-        <a href="https://nichijou.fandom.com/wiki/Sakamoto">
-          <div className="tooltip h-[20vw]" data-tip="what is this?">
-            <Cat />
-          </div>
-        </a>
+        {/* <a href="https://nichijou.fandom.com/wiki/Sakamoto"> */}
+        <div className=" h-[25vw] min-h-[100px]">
+          <Cat />
+        </div>
+        {/* </a> */}
       </div>
 
       <div className={changableTailwindClass}>
@@ -24,6 +24,9 @@ const Home = () => {
           Hi, my name is 黄旻杰 <br />
           (Minjie Huang)
         </h1>
+        <div className="tooltip h-[25vw] min-h-[100px]" data-tip="hello">
+          hallo
+        </div>
         <h2>title h2</h2>
         <h3>title h3</h3>
         <p>pppppppp</p>
