@@ -7,9 +7,11 @@ const Navbar = () => {
     <div className="navbar bg-primary mb-2 sticky top-0 z-50">
       <div className="flex-1">
         <Link href="/">
-          <button className="btn btn-ghost no-animation normal-case text-4xl font-medium text-base-100">
-            {`< MiL >`} (WIP)
-          </button>
+          <div className="border-0 border-white rounded-xl hover:border-2 duration-300">
+            <button className="btn btn-ghost no-animation normal-case text-4xl font-medium text-base-100">
+              {`< MiL >`}
+            </button>
+          </div>
         </Link>
       </div>
       <div className="flex-none">
