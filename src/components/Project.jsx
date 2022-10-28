@@ -53,14 +53,14 @@ const Project = ({
           <div className="card-actions justify-center lg:justify-start">
             {display ? (
               <a href={display}>
-                <button className={"btn btn-accent"}>Display</button>
+                <button className={"btn btn-primary"}>Display</button>
               </a>
             ) : (
               <button className={"btn btn-disabled"}>Display</button>
             )}
             {!!githubLink && (
               <a href={githubLink}>
-                <button className="btn btn-accent">Repo</button>
+                <button className="btn btn-primary">Repo</button>
               </a>
             )}
           </div>

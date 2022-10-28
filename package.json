@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^9.37.1",
     "@react-three/fiber": "^8.8.10",
     "daisyui": "^2.31.0",
     "jotai": "^1.8.5",
