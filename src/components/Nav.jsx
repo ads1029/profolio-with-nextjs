@@ -16,13 +16,13 @@ const Navbar = () => {
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0">
-          <li>
+          {/* <li>
             <Link href="/projects">
-              <a className="text-base-300 hover:text-base-100 duration-500">
+              <a className=" text-xl text-base-300 hover:text-base-100 duration-500">
                 Projects
               </a>
             </Link>
-          </li>
+          </li> */}
 
           {/* removable */}
           {/* <li>
