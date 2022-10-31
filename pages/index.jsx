@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "../src/components/Nav";
 import Cat from "../src/components/Cat";
 import { useAtom } from "jotai";
+import Link from "next/link";
 
 const Home = () => {
   const changableTailwindClass = "intro flex flex-col place-items-center";
@@ -18,10 +19,10 @@ const Home = () => {
 
         <a href="https://nichijou.fandom.com/wiki/Sakamoto">
           <div
-            className="hover:underline mb-10 text-xl text-gray-400 text-center tooltip tooltip-warning"
+            className="hover:underline mb-10 text-sm text-gray-400 text-center tooltip tooltip-warning"
             data-tip="It is a cat!"
           >
-            ☝️ <br /> what is this thing?
+            ☝️ <br /> what is this?
           </div>
         </a>
         {/* </a> */}
@@ -29,14 +30,14 @@ const Home = () => {
 
       {/* should not be using prose. Need customise spacing */}
       <div className={changableTailwindClass}>
-        <h1 className="font-light text-5xl">
-          Hi, my name is{" "}
+        <h1 className="font-light lg:text-5xl text-3xl">
+          Hi, I am
           <p
-            className="inline-block 
-          hover:bg-yellow-200 duration-1000"
+            className="inline-block mx-4
+            bg-gradient-to-b from-white via-yellow-100 to-yellow-300 "
           >
             {/* half text tall bg hover effect */}
-            {/* hover:bg-gradient-to-b hover:from-white hover:via-white hover:to-yellow-300 "> */}
+            {/* hover:bg-yellow-200 duration-1000"> */}
             黄旻杰
           </p>
           <br />
@@ -46,6 +47,12 @@ const Home = () => {
         <h2 className=" mt-10 text-3xl font-light">
           I am a frontend developer <br /> who creates with passion.
         </h2>
+
+        <Link href="/projects">
+          <button className="btn btn-outline btn-primary  mt-[10vh] text-2xl ">
+            Projects
+          </button>
+        </Link>
       </div>
     </div>
   );
