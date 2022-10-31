@@ -61,8 +61,8 @@ const Projects = () => {
         "A pure portfolio building with pure HTML and CSS, mainly showing the potential of CSS",
       techStacks: ["HTML", "CSS"],
       projectImage: purePortfolioImage,
-      githubLink: "https://github.com/ads1029",
-      display: "https://github.com/ads1029/ads1029.github.io",
+      githubLink: "https://github.com/ads1029/ads1029.github.io",
+      display: "https://ads1029.github.io/",
     },
   ];
 
