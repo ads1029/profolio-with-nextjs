@@ -44,12 +44,12 @@ const Home = () => {
           aka. Minjie Huang
         </h1>
 
-        <h2 className=" mt-10 text-3xl font-light">
+        <h2 className=" mt-10 text-2xl lg:text-3xl font-light">
           I am a frontend developer <br /> who creates with passion.
         </h2>
 
         <Link href="/projects">
-          <button className="btn btn-outline btn-primary  mt-[10vh] text-2xl ">
+          <button className="btn btn-outline btn-primary text-2xl mt-24 lg:mt-10">
             Projects
           </button>
         </Link>
