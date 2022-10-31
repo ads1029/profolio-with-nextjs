@@ -58,11 +58,11 @@ const Projects = () => {
     {
       title: "Pure Portfolio - 2020",
       summary:
-        "A pure portfolio building with pure HTML and CSS, mainly showing the potential of CSS",
+        "A pure portfolio building with pure HTML and CSS, the aim of this project is to tested the limit of CSS and see how much devs could avoid using JS",
       techStacks: ["HTML", "CSS"],
       projectImage: purePortfolioImage,
-      githubLink: "https://github.com/ads1029",
-      display: "https://github.com/ads1029/ads1029.github.io",
+      githubLink: "https://github.com/ads1029/ads1029.github.io",
+      display: "https://ads1029.github.io/",
     },
   ];
 
