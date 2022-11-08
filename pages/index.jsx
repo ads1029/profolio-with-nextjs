@@ -10,6 +10,11 @@ const Home = () => {
 
   return (
     <div>
+      <Head>
+        <title>{`Minjie's Portfolio`}</title>
+        <meta name="portfolio" content="portfolio" />
+      </Head>
+
       <Navbar />
       <div className="flex flex-col place-items-center">
         {/* <a href="https://nichijou.fandom.com/wiki/Sakamoto"> */}
