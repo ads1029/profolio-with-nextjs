@@ -6,6 +6,7 @@ specifiers:
   '@tailwindcss/typography': ^0.5.7
   '@types/node': 18.11.0
   '@types/react': 18.0.21
+  '@vercel/analytics': ^0.1.3
   autoprefixer: ^10.4.12
   daisyui: ^2.31.0
   eslint: 8.25.0
@@ -24,6 +25,7 @@ specifiers:
 dependencies:
   '@react-three/drei': 9.37.1_cpod6d3cr76qxhqbh6bdljlrqm
   '@react-three/fiber': 8.8.10_ee34sidbpuk5ebd4phepfgxxdi
+  '@vercel/analytics': 0.1.3_react@18.2.0
   daisyui: 2.31.0_xkowlklhtk6sfvtndbucb3hfiy
   jotai: 1.8.5_react@18.2.0
   next: 12.3.1_biqbaboplfbrettd7655fr4n2y
@@ -522,6 +524,14 @@ packages:
       react: '>= 16.8.0'
     dependencies:
       '@use-gesture/core': 10.2.20
+      react: 18.2.0
+    dev: false
+
+  /@vercel/analytics/0.1.3_react@18.2.0:
+    resolution: {integrity: sha512-zJuEwzvi0bBmWrMrj9jvyMS+X6iUdW3m/y5P7aOLwJQKHsJyfpdINo/4Rv+wxubz3gl4nRqIQdtOFCe1P1ErXQ==}
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
       react: 18.2.0
     dev: false
 
